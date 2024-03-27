@@ -15,6 +15,16 @@
         android:theme="@style/Theme.LastProject"
         tools:targetApi="31">
         <activity
+            android:name=".ui.splashscreen.SplahScreenActivity"
+            android:exported="true"
+            android:theme="@style/SplashScreenStyle">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".ui.SettingActivity"
             android:exported="false" />
         <activity
@@ -22,13 +32,7 @@
             android:exported="false" />
         <activity
             android:name=".ui.MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true"></activity>
     </application>
 
 </manifest>
